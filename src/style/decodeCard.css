@@ -1,0 +1,38 @@
+/* Decoded Message */
+.decoded-message {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8fafd;
+  border-left: 4px solid #1e88e5;
+  border-radius: 8px;
+}
+
+.decoded-message h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1e88e5;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.decoded-message p {
+  font-family: 'Fira Code', monospace;
+  color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card button {
+    width: 100%;
+  }
+}

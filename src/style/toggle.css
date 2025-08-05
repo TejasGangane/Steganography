@@ -1,0 +1,72 @@
+/* Main container for toggle and cards */
+.toggle-container {
+  padding: 2rem;
+  background-color: #f8fafd; /* Same as navbar */
+  color: #1e88e5;             /* Theme color */
+  font-family: 'Fira Code', monospace;  
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Wrapper for toggle switch */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Toggle switch styles */
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 36px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #cfd8dc;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-slider {
+  background-color: #1e88e5;
+}
+
+.toggle-input:checked + .toggle-slider::before {
+  transform: translateX(28px);
+}
+
+/* Mode label beside the toggle */
+.toggle-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e88e5;
+}

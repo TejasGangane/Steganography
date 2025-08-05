@@ -1,0 +1,120 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafd;
+  padding: 1rem 2rem;
+  color: #1e88e5;
+  font-family: 'Fira Code', monospace;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Title */
+.navbarTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e88e5;
+  letter-spacing: 1px;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #1e88e5;
+  cursor: pointer;
+}
+
+/* Links list */
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual link */
+.navbarItem a {
+  text-decoration: none;
+  color: #1e88e5;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover underline effect */
+.navbarItem a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+.navbarItem a:hover {
+  color: #00bcd4;
+  transform: scale(1.03);
+}
+
+.navbarItem a:hover::after {
+  width: 100%;
+}
+
+/* Active state (if used) */
+.navbarItem .active {
+  color: #00bcd4;
+  font-weight: 600;
+}
+
+.navbarItem .active::after {
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbarLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8fafd;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+
+  .navbarLinks.showMenu {
+    display: flex;
+  }
+
+  .navbarItem {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbarItem a {
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .navbarContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

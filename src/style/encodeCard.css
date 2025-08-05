@@ -1,0 +1,63 @@
+/* Common card styles */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.1);
+  font-family: 'Fira Code', monospace;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(30, 136, 229, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #1e88e5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* File input */
+.card input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+  border: 1px dashed #1e88e5;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card input[type="file"]:hover {
+  background-color: #f0faff;
+}
+
+/* Button */
+.card button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Fira Code', monospace;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card button:hover {
+  background-color: #1565c0;
+  transform: scale(1.03);
+}
