@@ -43,5 +43,5 @@ Unlike encryption which hides the content, **steganography hides the existence**
 
 ---
 
-## 📂 Project Structure
+
 
