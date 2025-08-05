@@ -1,16 +1,47 @@
-<<<<<<< HEAD
-# React + Vite
+# 🖼️ Steganography Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web-based tool that lets you **hide secret messages inside images** using Steganography. This application runs entirely in your browser, with no server-side storage or processing. Built with HTML, CSS, and JavaScript — and optionally React for modular structure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 What is Steganography?
 
-## Expanding the ESLint configuration
+**Steganography** is the technique of hiding information within another medium so that the presence of the message is concealed. In this project, we hide a **text message** inside the **least significant bits (LSBs)** of an image’s pixels.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Steganography
->>>>>>> 7c3c37696d54b98d308e8254b1ab5e4c3418476a
+Unlike encryption which hides the content, **steganography hides the existence** of the message itself.
+
+---
+
+## 🌐 Live Website
+
+👉 [https://your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)
+
+> *(Replace with your actual Vercel link)*
+
+---
+
+## 🚀 Features
+
+- 🔐 **Encrypt**: Hide a message inside an image
+- 🔓 **Decrypt**: Extract hidden messages from a stego image
+- 🎛 **Toggle Mode**: Easily switch between encryption and decryption
+- 🖼 Drag-and-drop or select images
+- 📤 Preview & download stego image
+- 👁️ Step-by-step pixel transformation (in dev mode)
+- ⚡ Fast – all operations in-browser
+
+---
+
+## 🛠 Tech Stack
+
+| Technology     | Purpose                         |
+|----------------|---------------------------------|
+| HTML, CSS      | Basic structure & styling       |
+| JavaScript     | Image manipulation & logic      |
+| React + Vite   | (optional) Component-based UI   |
+| Vercel         | Hosting & deployment            |
+
+---
+
+## 📂 Project Structure
+
